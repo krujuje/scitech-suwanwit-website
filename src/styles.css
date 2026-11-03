@@ -274,3 +274,75 @@ html, body, body * {
     white-space: nowrap !important;
   }
 }
+
+
+/* Icon-led navigation: meaningful icon above the original menu label */
+@media (min-width: 761px) {
+  .head { min-height: 88px !important; }
+  .nav {
+    align-items: stretch !important;
+    gap: 3px !important;
+  }
+  .nav button {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    min-height: 72px !important;
+    height: 72px !important;
+    padding: 8px 3px 7px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    white-space: normal !important;
+    border-radius: 12px !important;
+  }
+  .nav .nav-icon {
+    display: block !important;
+    width: 19px !important;
+    height: 19px !important;
+    flex: 0 0 19px !important;
+    stroke-width: 1.9 !important;
+  }
+  .nav .nav-label {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-size: clamp(9px, 0.68vw, 10.5px) !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.035em !important;
+    white-space: nowrap !important;
+  }
+}
+@media (min-width: 761px) and (max-width: 1250px) {
+  .nav .nav-icon { width: 17px !important; height: 17px !important; flex-basis: 17px !important; }
+  .nav .nav-label { font-size: 9px !important; }
+}
+@media (max-width: 760px) {
+  .nav.show {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+  .nav button {
+    min-height: 66px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    text-align: center !important;
+    padding: 9px 5px !important;
+    white-space: normal !important;
+  }
+  .nav .nav-icon {
+    width: 19px !important;
+    height: 19px !important;
+    flex: 0 0 19px !important;
+  }
+  .nav .nav-label {
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+  }
+}
