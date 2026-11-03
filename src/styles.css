@@ -224,3 +224,20 @@ html, body, body * {
 @media (max-width: 760px) {
   .head { width: calc(100% - 30px) !important; }
 }
+
+
+/* Fine-tune Thai desktop navigation: slightly smaller and more compact */
+@media (min-width: 761px) {
+  .head { gap: 14px !important; }
+  .nav { gap: 2px !important; }
+  .nav button {
+    font-size: 11px !important;
+    line-height: 1.35 !important;
+    padding: 6px 3px !important;
+    min-height: 54px !important;
+    letter-spacing: -0.015em !important;
+  }
+}
+@media (min-width: 1251px) {
+  .nav button { font-size: 11.5px !important; padding-left: 4px !important; padding-right: 4px !important; }
+}
