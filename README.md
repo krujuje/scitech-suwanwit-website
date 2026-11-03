@@ -16,8 +16,12 @@ npm run dev
 ```
 
 ## Cloudflare Pages
-Build command: `npm run build`
-Output directory: `dist`
+- Project: scitech-suwanwit-website
+- Production branch: main
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: `/`
+- GitHub integration: enabled (automatic production deployments and preview deployments)
 
 ## Status
 Phase 1 frontend starter. Supabase database, authentication, storage and Admin CMS are not connected yet. Do not place service-role keys or secrets in frontend code.
