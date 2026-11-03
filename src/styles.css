@@ -346,3 +346,63 @@ html, body, body * {
     line-height: 1.25 !important;
   }
 }
+
+
+/* Featured announcement card: Science and Technology Week 2570 */
+.news-feature {
+  display: grid;
+  grid-template-columns: minmax(180px, .34fr) minmax(0, 1fr);
+  overflow: hidden;
+  margin-top: 28px;
+  border: 1px solid #dcebdc;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(20, 90, 45, .08);
+}
+.news-feature-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 210px;
+  padding: 24px;
+  color: #fff;
+  background: linear-gradient(145deg, #087b35, #36a85b);
+}
+.news-feature-mark span {
+  font: 700 11px/1.2 'Varela Round', sans-serif;
+  letter-spacing: .12em;
+}
+.news-feature-body { padding: 26px 30px; }
+.news-feature-body > small {
+  color: #188344;
+  font-size: 12px;
+  font-weight: 700;
+}
+.news-feature-body h3 {
+  margin: 10px 0;
+  color: #17472b;
+  font-size: clamp(20px, 2vw, 27px);
+  line-height: 1.4;
+}
+.news-feature-body p {
+  margin: 0;
+  color: #5b6b60;
+  line-height: 1.8;
+}
+.news-feature-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 18px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #087b35;
+  background: #edf7e8;
+}
+@media (max-width: 640px) {
+  .news-feature { grid-template-columns: 1fr; }
+  .news-feature-mark { min-height: 105px; }
+  .news-feature-body { padding: 21px; }
+}
