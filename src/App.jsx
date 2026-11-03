@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Atom, FlaskConical, Microscope, Telescope, Cpu, BookOpen, Menu, X, Globe2, ChevronRight, ArrowUpRight, Users, FileText, Trophy, CalendarDays, ExternalLink, ChevronLeft, ChevronRight as NextIcon, Pause, Play } from 'lucide-react';
+import { Atom, FlaskConical, Microscope, Telescope, Cpu, BookOpen, Menu, X, Globe2, ChevronRight, ArrowUpRight, Users, FileText, Trophy, CalendarDays, ExternalLink, ChevronLeft, ChevronRight as NextIcon, Pause, Play, Home, Info, UsersRound, Layers3, Newspaper, LibraryBig, ClipboardList, Award, MonitorSmartphone } from 'lucide-react';
 
 const FB='https://www.facebook.com/share/19aprnCA35/';
 const LINE='https://line.me/ti/g2/ji3Z0g0k3CeL0nVrw28d7bbG8noT6w43Eia-xw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default';
@@ -11,7 +11,7 @@ const slides=[
  {src:'/assets/activity-04.jpg',alt:'ภาพกิจกรรมเด่นของกลุ่มสาระวิทยาศาสตร์และเทคโนโลยี 4',title:'ร่วมกิจกรรมอย่างสร้างสรรค์',caption:'พัฒนาศักยภาพผู้เรียนผ่านกิจกรรมที่หลากหลาย'},
  {src:'/assets/activity-05.jpg',alt:'ภาพกิจกรรมเด่นของกลุ่มสาระวิทยาศาสตร์และเทคโนโลยี 5',title:'ความภาคภูมิใจของพวกเรา',caption:'บันทึกความทรงจำและผลงานของชุมชนการเรียนรู้'}
 ];
-const nav=[['home','หน้าแรก','Home'],['about','เกี่ยวกับเรา','About'],['staff','บุคลากร','Staff'],['subjects','สาขาวิชา','Subjects'],['news','ข่าวประชาสัมพันธ์','News'],['resources','คลังสื่อการเรียนรู้','Learning'],['documents','ใบงานและเอกสาร','Documents'],['works','ผลงานนักเรียน','Student works'],['activities','กิจกรรมและรางวัล','Activities'],['systems','ระบบออนไลน์','Online systems']];
+const nav=[[Home,'home','หน้าแรก','Home'],[Info,'about','เกี่ยวกับเรา','About'],[UsersRound,'staff','บุคลากร','Staff'],[Layers3,'subjects','สาขาวิชา','Subjects'],[Newspaper,'news','ข่าวประชาสัมพันธ์','News'],[LibraryBig,'resources','คลังสื่อการเรียนรู้','Learning'],[ClipboardList,'documents','ใบงานและเอกสาร','Documents'],[Trophy,'works','ผลงานนักเรียน','Student works'],[Award,'activities','กิจกรรมและรางวัล','Activities'],[MonitorSmartphone,'systems','ระบบออนไลน์','Online systems']];
 const subjects=[
  [Atom,'ฟิสิกส์','Physics','เรียนรู้กฎธรรมชาติ พลังงาน แรง และการเคลื่อนที่'],
  [FlaskConical,'เคมี','Chemistry','สำรวจสาร ปฏิกิริยา และการเปลี่ยนแปลงของสสาร'],
@@ -30,7 +30,7 @@ export default function App(){
   <div className="top"><div className="wrap">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี <span>โรงเรียนสุวรรณภูมิวิทยาลัย</span></div></div>
   <header><div className="wrap head">
    <a className="brand" href="#home" onClick={e=>{e.preventDefault();go('home')}}><img src={LOGO} alt="ตราสัญลักษณ์กลุ่มสาระวิทยาศาสตร์และเทคโนโลยี"/><span><b className="en-font">Sci-Tech Suwanwit</b><small className="en-font">Science and Technology</small></span></a>
-   <nav className={open?'nav show':'nav'}>{nav.map(([id,th,eng])=><button className={`${active===id?'chosen':''} ${en?'en-font':''}`} key={id} onClick={()=>go(id)}>{en?eng:th}</button>)}</nav>
+   <nav className={open?'nav show':'nav'}>{nav.map(([Icon,id,th,eng])=><button className={`${active===id?'chosen':''} ${en?'en-font':''}`} key={id} onClick={()=>go(id)}><Icon className="nav-icon" aria-hidden="true"/><span className="nav-label">{en?eng:th}</span></button>)}</nav>
    <div className="tools"><button className="lang en-font" onClick={()=>setEn(!en)}><Globe2 size={16}/>{en?'TH':'EN'}</button><button className="hamb" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button></div>
   </div></header>
   <main>
