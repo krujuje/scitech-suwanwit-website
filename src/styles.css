@@ -158,3 +158,69 @@ html, body, body * {
 .en-font, .en-font * {
   font-family: 'Varela Round', sans-serif !important;
 }
+
+
+/* Desktop navigation refinement: balanced spacing, compact height, readable Thai labels */
+@media (min-width: 761px) {
+  .head {
+    width: min(1640px, calc(100% - 48px)) !important;
+    gap: 18px !important;
+    min-height: 76px !important;
+  }
+  .brand {
+    gap: 12px !important;
+  }
+  .brand img {
+    width: 62px !important;
+    height: 62px !important;
+  }
+  .brand b {
+    font-size: 18px !important;
+    white-space: nowrap !important;
+  }
+  .brand small {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+  }
+  .nav {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    gap: 3px !important;
+  }
+  .nav button {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    min-height: 58px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 7px 5px !important;
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+    border-radius: 9px !important;
+  }
+  .nav button:hover,
+  .nav .chosen {
+    background: #edf7e8 !important;
+    color: #087b35 !important;
+  }
+  .tools {
+    flex: 0 0 auto !important;
+  }
+}
+@media (min-width: 761px) and (max-width: 1250px) {
+  .head { gap: 10px !important; }
+  .brand img { width: 52px !important; height: 52px !important; }
+  .brand b { font-size: 15px !important; }
+  .brand small { font-size: 10px !important; }
+  .nav button { font-size: 10.5px !important; padding: 6px 3px !important; }
+}
+@media (max-width: 760px) {
+  .head { width: calc(100% - 30px) !important; }
+}
