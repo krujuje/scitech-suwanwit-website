@@ -253,3 +253,12 @@
 .cms-staff-fields label:last-child { grid-column:1/-1; }
 .cms-staff-fields input,.cms-staff-fields select,.cms-staff-fields textarea { width:100%; box-sizing:border-box; padding:11px; border:1px solid #dce9dd; border-radius:9px; background:white; font:13px 'Noto Serif Thai',serif; }
 @media(max-width:680px){.cms-staff-fields{grid-template-columns:1fr}.cms-staff-fields label:last-child{grid-column:auto}}
+
+
+/* Staff editor v2: structured identity, rank and multi-select special duties */
+.cms-staff-fields .cms-duty-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px;border:1px solid #dce9dd;border-radius:10px;background:#fff}
+.cms-staff-fields .cms-duty-option{display:flex;flex-direction:row;align-items:center;gap:8px;padding:6px 4px;font-size:12px;cursor:pointer}
+.cms-staff-fields .cms-duty-option input{width:16px;height:16px;accent-color:#087b35;flex:0 0 16px}
+.cms-staff-fields .cms-help{font-size:11px;color:#788b7b;font-weight:400}
+.cms-staff-preview{display:block;width:130px;height:150px;object-fit:cover;object-position:top center;margin-top:10px;border:1px solid #dce9dd;border-radius:10px}
+@media(max-width:680px){.cms-staff-fields .cms-duty-options{grid-template-columns:1fr}}
