@@ -1,1 +1,135 @@
 .cms-shell{min-height:100vh;background:#f4f7f1;color:#173e28;display:grid;grid-template-columns:250px 1fr}.cms-side{background:#073f24;color:#eaf5e8;padding:28px 20px;display:flex;flex-direction:column;gap:20px}.cms-logo{font:bold 27px Arial;color:#fff;text-decoration:none;letter-spacing:1px}.cms-logo span,.cms-mark span{color:#e8db19}.cms-logo small{display:block;font:10px Arial;letter-spacing:3px;color:#b9d7bd;margin-top:5px}.cms-user{border-block:1px solid #ffffff25;padding:18px 0;font-weight:700}.cms-user small{display:block;color:#b8d2bd;font-size:11px;font-weight:400;margin-top:6px;overflow-wrap:anywhere}.cms-side>a:not(.cms-logo),.cms-side>button{color:#eaf5e8;text-decoration:none;background:#ffffff12;border:0;border-radius:9px;padding:12px;text-align:left;display:flex;align-items:center;gap:9px;cursor:pointer;font:inherit}.cms-main{padding:32px;min-width:0}.cms-header,.cms-editor-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:25px}.cms-header small,.cms-editor-head small,.cms-kicker{font:700 10px Arial;letter-spacing:2px;color:#16823e}.cms-header h1,.cms-editor h2{margin:7px 0 0;font-size:25px}.cms-add{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:9px;background:#0b7839;color:white;padding:12px 17px;cursor:pointer;font:inherit;font-weight:700}.cms-add:disabled{opacity:.6}.cms-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}.cms-stats div{background:white;border:1px solid #e4ecdf;border-radius:13px;padding:19px}.cms-stats b{display:block;font-size:27px;color:#087b35}.cms-stats span{font-size:12px;color:#708273}.cms-list,.cms-editor{background:white;border:1px solid #e4ecdf;border-radius:14px;padding:20px}.cms-filters{display:flex;gap:10px;margin-bottom:15px}.cms-filters label{display:flex;align-items:center;gap:8px;border:1px solid #dce7d9;border-radius:8px;padding:0 10px;flex:1}.cms-filters input,.cms-filters select,.cms-filters label input{border:0;outline:0;min-width:0;width:100%;padding:11px;font:inherit}.cms-filters select{width:auto;border:1px solid #dce7d9;border-radius:8px;background:#fff}.cms-row{display:flex;align-items:center;gap:13px;padding:13px 0;border-top:1px solid #edf1e9}.cms-row>img,.cms-thumb{width:58px;height:52px;object-fit:cover;border-radius:8px;background:#edf5e9;display:grid;place-items:center;color:#6b9b70}.cms-row-info{flex:1;min-width:0;display:grid;gap:4px}.cms-row-info small{font-size:10px;color:#16823e}.cms-row-info b{font-size:14px}.cms-row-info span{font-size:11px;color:#7b897d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cms-row>button{border:1px solid #e2e9df;background:white;border-radius:7px;padding:8px;color:#42664a;cursor:pointer}.cms-status{font-size:10px;border-radius:20px;padding:6px 9px;white-space:nowrap}.cms-status.published{background:#e7f7e9;color:#16823e}.cms-status.draft{background:#fff5d7;color:#9b7600}.cms-status.archived{background:#eee;color:#666}.cms-empty{display:grid;justify-items:center;gap:8px;padding:55px 10px;color:#7d8c7d}.cms-empty b{color:#355b3e}.cms-empty span{font-size:12px}.cms-editor{max-width:1000px}.cms-fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.cms-fields label,.cms-login label{display:grid;gap:6px;font-size:12px;font-weight:700;color:#45634a}.cms-fields .wide{grid-column:1/-1}.cms-fields input,.cms-fields select,.cms-fields textarea,.cms-login input{width:100%;border:1px solid #dce7d9;border-radius:8px;padding:11px;font:inherit;color:#183d27;background:#fff}.cms-fields textarea{resize:vertical}.cms-json{font:12px/1.6 monospace!important}.cms-upload{display:flex;align-items:center;gap:10px;border:1px dashed #b8d3b7;border-radius:8px;padding:12px;color:#66836a}.cms-upload input{max-width:260px;border:0;padding:0}.cms-upload span{font-size:11px}.cms-form-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}.cms-plain{border:1px solid #dce7d9;background:white;color:#42634a;border-radius:8px;padding:10px 15px;cursor:pointer;font:inherit}.cms-error,.cms-notice{padding:12px 15px;border-radius:8px;margin:12px 0;font-size:12px}.cms-error{background:#fff0ed;color:#a63c2c;border:1px solid #ffd5cd}.cms-notice{background:#eaf8ec;color:#176c35}.cms-login{min-height:100vh;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at 80% 20%,#d8efba,transparent 35%),#f4faef}.cms-login form{width:min(420px,100%);background:white;border:1px solid #e1ebda;border-radius:18px;padding:34px;box-shadow:0 20px 60px #174a2615;display:grid;gap:15px}.cms-mark{font:bold 34px Arial;color:#087b35}.cms-kicker{font-size:9px}.cms-login h1{margin:0;color:#0b542b;font-size:25px}.cms-login p:not(.cms-kicker){margin:0;color:#718273;font-size:12px;line-height:1.8}.cms-login label{margin-top:5px}.cms-login button{border:0;border-radius:8px;background:#087b35;color:white;padding:13px;font:inherit;font-weight:700;cursor:pointer}.cms-login a{color:#167d3c;text-align:center;text-decoration:none;font-size:12px}.cms-loading{min-height:100vh;display:grid;place-items:center;color:#176c35}@media(max-width:850px){.cms-shell{grid-template-columns:1fr}.cms-side{padding:15px 20px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px}.cms-logo{font-size:20px}.cms-logo small{font-size:8px}.cms-user{grid-column:1/-1;grid-row:2;padding:10px 0}.cms-side>a:not(.cms-logo){grid-column:1;grid-row:3}.cms-side>button{grid-column:2;grid-row:3}.cms-main{padding:20px 14px}.cms-filters{flex-wrap:wrap}.cms-filters label{flex-basis:100%}.cms-row{gap:8px}.cms-row>img,.cms-thumb{width:42px;height:42px}.cms-status{font-size:9px;padding:5px}.cms-row-info b{font-size:12px}.cms-fields{grid-template-columns:1fr}.cms-fields .wide{grid-column:auto}}@media(max-width:480px){.cms-stats{gap:7px}.cms-stats div{padding:12px}.cms-stats b{font-size:21px}.cms-stats span{font-size:10px}.cms-row-info span{display:none}.cms-status{display:none}.cms-header h1{font-size:20px}.cms-add{padding:10px 12px;font-size:12px}}
+
+/* === Sci-Tech Suwanwit design-system alignment === */
+/* Match the public website typography: Noto Serif Thai throughout the CMS. */
+.cms-shell,
+.cms-shell *,
+.cms-login,
+.cms-login *,
+.cms-loading {
+  font-family: 'Noto Serif Thai', serif !important;
+}
+.cms-json { font-family: ui-monospace, SFMono-Regular, Consolas, monospace !important; }
+
+/* Shared website palette and softer green atmosphere. */
+.cms-shell {
+  background:
+    radial-gradient(circle at 92% 3%, #e2f4c9 0, transparent 28%),
+    linear-gradient(120deg, #f5faef 0%, #f1f7ed 100%);
+  color: #173e28;
+}
+.cms-side {
+  background: #075326;
+  color: #e7f6d8;
+  padding: 30px 22px;
+}
+.cms-logo {
+  font-family: 'Noto Serif Thai', serif !important;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+.cms-logo small {
+  font-family: 'Varela Round', sans-serif !important;
+  font-size: 10px;
+  letter-spacing: .2em;
+}
+.cms-user { line-height: 1.7; }
+.cms-user small { font-size: 11px; }
+.cms-side>a:not(.cms-logo), .cms-side>button {
+  border-radius: 12px;
+  background: #ffffff10;
+  transition: background .2s ease, transform .2s ease;
+}
+.cms-side>a:not(.cms-logo):hover, .cms-side>button:hover {
+  background: #ffffff20;
+  transform: translateY(-1px);
+}
+.cms-main { padding: 34px clamp(18px, 3vw, 46px); }
+.cms-header {
+  background: #fff;
+  border: 1px solid #e4eddd;
+  border-radius: 15px;
+  padding: 18px 22px;
+  box-shadow: 0 8px 24px #173e2809;
+}
+.cms-header small, .cms-editor-head small, .cms-kicker {
+  font-family: 'Varela Round', 'Noto Serif Thai', sans-serif !important;
+  letter-spacing: .14em;
+  line-height: 1.6;
+}
+.cms-header h1, .cms-editor h2, .cms-login h1 {
+  color: #0b542b;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.cms-add, .cms-login button {
+  background: #087b35;
+  border-radius: 11px;
+  font-family: 'Noto Serif Thai', serif !important;
+  transition: background .2s ease, transform .2s ease;
+}
+.cms-add:hover, .cms-login button:hover { background: #06652c; transform: translateY(-1px); }
+.cms-stats div, .cms-list, .cms-editor {
+  border-color: #e1ebda;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px #173e2808;
+}
+.cms-stats b { color: #087b35; }
+.cms-stats span, .cms-row-info span, .cms-empty span { line-height: 1.8; }
+.cms-filters label, .cms-filters select,
+.cms-fields input, .cms-fields select, .cms-fields textarea,
+.cms-login input {
+  border-color: #dce9dd;
+  border-radius: 10px;
+  font-family: 'Noto Serif Thai', serif !important;
+}
+.cms-filters input { font-family: 'Noto Serif Thai', serif !important; }
+.cms-fields label, .cms-login label {
+  font-family: 'Noto Serif Thai', serif !important;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.cms-fields input:focus, .cms-fields select:focus, .cms-fields textarea:focus,
+.cms-login input:focus {
+  outline: 2px solid #b7dfb8;
+  border-color: #16823e;
+}
+.cms-row { padding: 16px 0; }
+.cms-row-info b { line-height: 1.6; }
+.cms-status { font-family: 'Noto Serif Thai', serif !important; }
+.cms-plain { font-family: 'Noto Serif Thai', serif !important; border-radius: 10px; }
+.cms-login {
+  background:
+    radial-gradient(circle at 82% 15%, #d8efba 0, transparent 34%),
+    linear-gradient(120deg, #f5ffe8, #eef7e8);
+}
+.cms-login form {
+  width: min(500px, 100%);
+  border: 1px solid #e1ebda;
+  border-radius: 20px;
+  padding: clamp(26px, 4vw, 42px);
+  box-shadow: 0 18px 48px #194e2b12;
+}
+.cms-mark {
+  color: #087b35;
+  font-family: 'Varela Round', 'Noto Serif Thai', sans-serif !important;
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+.cms-login p:not(.cms-kicker) { font-size: 13px; line-height: 1.9; }
+.cms-login a { font-family: 'Noto Serif Thai', serif !important; }
+.cms-error, .cms-notice { font-family: 'Noto Serif Thai', serif !important; line-height: 1.8; }
+
+@media (max-width: 850px) {
+  .cms-side { background: #075326; }
+  .cms-main { padding: 18px 14px; }
+  .cms-header { padding: 16px; }
+}
+@media (max-width: 480px) {
+  .cms-header { align-items: flex-start; }
+  .cms-header h1 { font-size: 19px; }
+  .cms-login form { padding: 25px 21px; }
+}
