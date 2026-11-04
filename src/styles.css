@@ -483,3 +483,9 @@ html, body, body * {
 .staff-modal-photo{box-sizing:border-box;display:block;width:100%;height:100%;min-height:390px;max-height:620px;object-fit:contain;object-position:center center;background:linear-gradient(145deg,#f4f7ed,#eaf3e5);padding:8px}
 .staff-modal-photo-empty{min-height:390px}
 @media(max-width:680px){.staff-photo{aspect-ratio:4/4.5}.staff-modal-photo{width:100%;height:270px;min-height:0;max-height:300px;padding:6px}.staff-modal-photo-empty{min-height:220px}}
+
+
+/* Keep portrait at natural ratio in fixed-height staff card frame */
+.staff-photo{background:#fff!important}
+.staff-photo img{object-fit:contain!important;object-position:center center!important;width:100%;height:100%;padding:0;box-sizing:border-box}
+.staff-modal-photo{object-fit:contain!important;object-position:center center!important;background:#fff!important}
