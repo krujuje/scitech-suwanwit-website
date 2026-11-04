@@ -2,9 +2,7 @@
 
 
 /* === Final layout corrections: consistent typography and activity carousel === */
-html, body, body * {
-  font-family: 'Noto Serif Thai', serif !important;
-}
+/* Removed legacy Thai-only global override: mixed-language font stack below handles Thai and English correctly. */
 .hero-grid {
   grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr) !important;
   gap: 24px !important;
@@ -520,3 +518,6 @@ html, body, body * {
 
 /* Typography standard: Varela Round for Latin characters, Noto Serif Thai for Thai glyphs. */
 *,*::before,*::after{font-family:'Varela Round','Noto Serif Thai',serif!important}
+
+/* Hero title may contain English even while the interface is in Thai mode. */
+.hero .hero-title-line{font-family:'Varela Round','Noto Serif Thai',sans-serif!important;font-synthesis:none}
