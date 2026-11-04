@@ -498,3 +498,17 @@ html, body, body * {
 .staff-card-subject>span{color:#a18416}
 .staff-card-duty{align-items:flex-start}
 .staff-card-duty .staff-duty-tags{margin:0}
+
+
+/* Normalize staff card typography to match the clean profile text reference */
+.staff-card-body{font-family:'Noto Serif Thai',serif!important}
+.staff-card-body h3{font-family:'Noto Serif Thai',serif!important;font-size:16px!important;font-weight:700!important;line-height:1.55!important;margin:0 0 5px!important;color:#164b2b!important}
+.staff-card-body .staff-nickname{display:block;font-family:'Noto Serif Thai',serif!important;font-size:12px!important;font-weight:400!important;line-height:1.7!important;color:#9a811d!important;margin:2px 0 8px!important}
+.staff-card-body .staff-card-field{display:flex!important;flex-wrap:wrap!important;align-items:baseline!important;gap:4px!important;margin:7px 0!important;font-family:'Noto Serif Thai',serif!important;font-size:12px!important;font-weight:400!important;line-height:1.75!important;color:#687d6d!important}
+.staff-card-body .staff-card-field>b{font-family:'Noto Serif Thai',serif!important;font-size:12px!important;font-weight:700!important;color:#536e59!important;line-height:1.75!important}
+.staff-card-body .staff-card-field .staff-position{display:inline-block!important;font-family:'Noto Serif Thai',serif!important;font-size:11px!important;font-weight:400!important;line-height:1.5!important;padding:4px 10px!important;margin:0!important}
+.staff-card-body .staff-card-subject>span{font-size:12px!important;color:#687d6d!important}
+.staff-card-body .staff-card-duty{align-items:center!important}
+.staff-card-body .staff-duty-tags{display:flex!important;flex-wrap:wrap!important;gap:5px!important}
+.staff-card-body .staff-duty-tags span{font-family:'Noto Serif Thai',serif!important;font-size:10px!important;font-weight:400!important;line-height:1.5!important;padding:4px 9px!important}
+.staff-card-body .staff-card-more{font-family:'Noto Serif Thai',serif!important;font-size:11px!important;font-weight:400!important;margin-top:9px!important;line-height:1.7!important}
