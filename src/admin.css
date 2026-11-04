@@ -364,3 +364,6 @@
 .cms-home-slide-preview{display:flex;align-items:center;gap:12px;grid-column:1/-1;color:#087b35;font-size:12px}
 .cms-home-slide-preview img{width:150px;height:86px;object-fit:cover;border-radius:9px;border:1px solid #dcebd8;background:#fff}
 @media(max-width:700px){.cms-home-grid,.cms-home-slide-grid{grid-template-columns:1fr}.cms-home-grid label.wide,.cms-home-slide-grid label.wide{grid-column:auto}.cms-home-slides-head{align-items:flex-start;flex-direction:column}.cms-home-slides-head .cms-add{width:100%}}
+
+/* Typography standard: Varela Round for Latin characters, Noto Serif Thai for Thai glyphs. */
+.cms-shell,.cms-shell *,.cms-shell *::before,.cms-shell *::after,.cms-login,.cms-login *,.cms-login *::before,.cms-login *::after{font-family:'Varela Round','Noto Serif Thai',serif!important}
