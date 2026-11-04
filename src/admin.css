@@ -315,3 +315,15 @@
 .cms-education-level>label select{background:#fff8df!important;border-color:#e7d58a!important}
 .cms-qualification>label select{background:#edf7e9!important;border-color:#b9d8b2!important}
 .cms-education-field>label select:focus{outline:2px solid #9abf85;outline-offset:1px}
+
+
+/* Two independent education/qualification dropdown groups */
+.cms-education-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:14px 16px;border:2px dashed #2457e8;border-radius:16px;margin:12px 0;min-width:0}
+.cms-education-pair-primary{background:#f8fbff}
+.cms-education-pair-secondary{background:#f4f8ff}
+.cms-education-pair .cms-education-field{min-width:0}
+.cms-education-pair .cms-education-field>label{display:grid;gap:7px}
+.cms-education-pair .cms-education-field>label select{width:100%;min-height:48px}
+.cms-education-pair-primary .cms-education-level select,.cms-education-pair-secondary .cms-education-level select{background:#fff8df!important;border-color:#e7d58a!important}
+.cms-education-pair-primary .cms-qualification select,.cms-education-pair-secondary .cms-qualification select{background:#edf7e9!important;border-color:#b9d8b2!important}
+@media(max-width:700px){.cms-education-pair{grid-template-columns:1fr;gap:10px;padding:12px}}
