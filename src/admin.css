@@ -164,3 +164,76 @@
   font-size: 10px;
   line-height: 1.7;
 }
+
+/* Brand logo integration and Varela Round account identity */
+.cms-user small {
+  font-family: 'Varela Round', sans-serif !important;
+  font-size: 12px;
+  letter-spacing: .01em;
+}
+.cms-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Varela Round', sans-serif !important;
+}
+.cms-logo > img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex: 0 0 48px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.cms-logo-text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif !important;
+}
+.cms-logo-text small {
+  font-family: 'Varela Round', sans-serif !important;
+}
+.cms-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+.cms-brand-lockup > img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.cms-heading-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+.cms-heading-brand > img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  flex: 0 0 54px;
+}
+.cms-editor-head .cms-heading-brand > img {
+  width: 46px;
+  height: 46px;
+  flex-basis: 46px;
+}
+.cms-heading-brand > div { min-width: 0; }
+@media (max-width: 850px) {
+  .cms-logo > img { width: 38px; height: 38px; flex-basis: 38px; }
+  .cms-brand-lockup > img { width: 48px; height: 48px; }
+  .cms-heading-brand > img { width: 42px; height: 42px; flex-basis: 42px; }
+}
+@media (max-width: 480px) {
+  .cms-logo { gap: 8px; }
+  .cms-logo > img { width: 34px; height: 34px; flex-basis: 34px; }
+  .cms-heading-brand { gap: 9px; }
+  .cms-heading-brand > img { width: 36px; height: 36px; flex-basis: 36px; }
+}
