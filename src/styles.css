@@ -521,3 +521,23 @@
 
 /* Hero title may contain English even while the interface is in Thai mode. */
 .hero .hero-title-line{font-family:'Varela Round','Noto Serif Thai',sans-serif!important;font-synthesis:none}
+
+/* About Us page: editorial layout with distinct history, direction and goals blocks */
+.about-section{padding:76px 0 84px;background:linear-gradient(180deg,#fbfdf8 0%,#f0f8e9 100%)}
+.about-heading{max-width:850px;margin:0 auto 30px;text-align:center}
+.about-heading small{color:#12813c;font-size:11px;font-weight:700;letter-spacing:.16em}
+.about-heading h2{margin:10px 0 0;color:#0b542b;font-size:clamp(25px,3vw,38px);line-height:1.5}
+.about-intro-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:28px;align-items:stretch}
+.about-main-image{min-height:280px;overflow:hidden;border:8px solid #fff;border-radius:18px;box-shadow:0 12px 30px #174c2b14;background:#eaf4e4}
+.about-main-image img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover}
+.about-introduction{padding:26px 28px;border:1px solid #deebd9;border-radius:18px;background:#fff;box-shadow:0 8px 24px #174c2b0a}
+.about-introduction p,.about-history p,.about-direction-grid p,.about-identity p{margin:0;color:#5d7462;font-size:14px;line-height:2}
+.about-history{margin-top:20px;padding-top:18px;border-top:1px solid #e5eee0}
+.about-history h3,.about-goals h3,.about-identity h3{margin:0 0 10px;color:#155a30;font-size:18px}
+.about-direction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+.about-direction-grid article,.about-goals,.about-identity{padding:24px;border:1px solid #deebd9;border-radius:16px;background:#fff}
+.about-direction-grid article small{color:#b08c00;font:700 10px 'Varela Round',sans-serif;letter-spacing:.14em}
+.about-direction-grid h3{margin:7px 0 9px;color:#155a30;font-size:19px}
+.about-goals,.about-identity{margin-top:18px}
+.about-goals ol{margin:0;padding-left:23px;color:#5d7462;font-size:14px;line-height:2}
+@media(max-width:720px){.about-section{padding:48px 0 56px}.about-intro-grid,.about-direction-grid{grid-template-columns:1fr}.about-main-image,.about-main-image img{min-height:210px}.about-introduction,.about-direction-grid article,.about-goals,.about-identity{padding:19px}}
