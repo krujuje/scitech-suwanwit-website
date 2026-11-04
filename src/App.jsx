@@ -24,7 +24,7 @@ const subjects=[
 export default function App(){
  const [en,setEn]=useState(false),[open,setOpen]=useState(false),[active,setActive]=useState('home');
  const [slide,setSlide]=useState(0),[paused,setPaused]=useState(false),[homeSettings,setHomeSettings]=useState(null);
- const slides=homeSettings?.slides?.filter(x=>x?.image_url)||defaultSlides;
+ const slides=homeSettings?.slides?.filter(x=>x?.image_url).map(x=>({...x,src:x.image_url,alt:x.alt||x.title||'ภาพกิจกรรมเด่นของกลุ่มสาระวิทยาศาสตร์และเทคโนโลยี'}))||defaultSlides;
  const [staffItems,setStaffItems]=useState([]),[staffQuery,setStaffQuery]=useState(''),[staffFilter,setStaffFilter]=useState('all'),[selectedStaff,setSelectedStaff]=useState(null);
  useEffect(()=>{let active=true;supabase.from('cms_content').select('body').eq('section','home').eq('content_type','home_settings').eq('status','published').order('updated_at',{ascending:false}).limit(1).maybeSingle().then(({data,error})=>{if(active&&!error&&data?.body)setHomeSettings(typeof data.body==='string'?JSON.parse(data.body):data.body)});return()=>{active=false}},[]);
  useEffect(()=>{let active=true;supabase.from('cms_content').select('id,title,summary,body,image_url,sort_order').eq('section','staff').eq('status','published').order('sort_order',{ascending:true}).then(({data,error})=>{if(active&&!error)setStaffItems(data||[])});return()=>{active=false}},[]);
