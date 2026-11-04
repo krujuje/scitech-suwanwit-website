@@ -245,3 +245,11 @@
 .cms-user small {
   font-family: 'Varela Round', sans-serif !important;
 }
+
+/* Structured personnel form */
+.cms-staff-fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; padding:17px; border:1px solid #dcebdc; border-radius:13px; background:#f8fcf5; }
+.cms-staff-intro { grid-column:1/-1; color:#087b35; font-size:12px; line-height:1.8; }
+.cms-staff-fields label { display:flex; flex-direction:column; gap:6px; }
+.cms-staff-fields label:last-child { grid-column:1/-1; }
+.cms-staff-fields input,.cms-staff-fields select,.cms-staff-fields textarea { width:100%; box-sizing:border-box; padding:11px; border:1px solid #dce9dd; border-radius:9px; background:white; font:13px 'Noto Serif Thai',serif; }
+@media(max-width:680px){.cms-staff-fields{grid-template-columns:1fr}.cms-staff-fields label:last-child{grid-column:auto}}
