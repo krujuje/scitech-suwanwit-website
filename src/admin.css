@@ -274,3 +274,12 @@
 .cms-staff-image-preview{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}
 .cms-staff-image-preview .cms-staff-preview{margin-top:0}
 @media(max-width:680px){.cms-header-actions{width:100%;justify-content:flex-start}.cms-header-actions .cms-add{flex:1;padding:11px 10px!important;font-size:12px!important}.cms-editor-nav{width:100%;justify-content:flex-start}.cms-edit-action span{display:inline}}
+
+
+/* Explicit publish workflow controls */
+.cms-publish-action{border:1px solid #cfe3c9;background:#eef7e9;color:#087b35;border-radius:9px;padding:9px 12px;font:600 12px 'Noto Serif Thai',serif;white-space:nowrap;cursor:pointer}
+.cms-publish-action:hover{background:#dff0d8}
+.cms-publish-action:disabled{opacity:.45;cursor:not-allowed}
+.cms-edit-action{display:inline-flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap}
+.cms-upload-state{display:block;color:#087b35;font-size:12px;line-height:1.7;margin:8px 0}
+@media(max-width:700px){.cms-row{flex-wrap:wrap}.cms-publish-action{font-size:11px;padding:7px 9px}}
