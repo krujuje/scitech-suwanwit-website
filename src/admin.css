@@ -327,3 +327,13 @@
 .cms-education-pair-primary .cms-education-level select,.cms-education-pair-secondary .cms-education-level select{background:#fff8df!important;border-color:#e7d58a!important}
 .cms-education-pair-primary .cms-qualification select,.cms-education-pair-secondary .cms-qualification select{background:#edf7e9!important;border-color:#b9d8b2!important}
 @media(max-width:700px){.cms-education-pair{grid-template-columns:1fr;gap:10px;padding:12px}}
+
+
+/* Each education set occupies its own full-width row.
+   Row 1: education level + qualification (yellow/green).
+   Row 2: additional education level + qualification (yellow/green). */
+.cms-education-pair{grid-column:1 / -1;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.cms-education-pair-primary{grid-row:auto}
+.cms-education-pair-secondary{grid-row:auto}
+.cms-education-pair .cms-education-field>label select{width:100%;box-sizing:border-box}
+@media(max-width:700px){.cms-education-pair{grid-template-columns:1fr}}
