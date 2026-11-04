@@ -237,3 +237,11 @@
   .cms-heading-brand { gap: 9px; }
   .cms-heading-brand > img { width: 36px; height: 36px; flex-basis: 36px; }
 }
+
+/* Ensure the Owner display name uses Varela Round too. */
+.cms-user {
+  font-family: 'Varela Round', sans-serif !important;
+}
+.cms-user small {
+  font-family: 'Varela Round', sans-serif !important;
+}
