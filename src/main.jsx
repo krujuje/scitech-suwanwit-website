@@ -4,6 +4,6 @@ import App from './App.jsx';
 import Admin from './Admin.jsx';
 import './styles.css';
 
-const path = window.location.pathname.replace(/\\/+$/, '') || '/';
-const Root = path === '/admin' || path.startsWith('/admin/') ? Admin : App;
+const path = window.location.pathname;
+const Root = path.startsWith('/admin') ? Admin : App;
 createRoot(document.getElementById('root')).render(<React.StrictMode><Root /></React.StrictMode>);
