@@ -512,3 +512,8 @@ html, body, body * {
 .staff-card-body .staff-duty-tags{display:flex!important;flex-wrap:wrap!important;gap:5px!important}
 .staff-card-body .staff-duty-tags span{font-family:'Noto Serif Thai',serif!important;font-size:10px!important;font-weight:400!important;line-height:1.5!important;padding:4px 9px!important}
 .staff-card-body .staff-card-more{font-family:'Noto Serif Thai',serif!important;font-size:11px!important;font-weight:400!important;margin-top:9px!important;line-height:1.7!important}
+
+
+/* One shared nickname treatment in both the staff card and profile dialog */
+.staff-card-body .staff-nickname,.staff-modal-content .staff-modal-nickname{display:block!important;width:auto!important;max-width:100%;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;font-family:'Noto Serif Thai',serif!important;font-size:11px!important;font-weight:400!important;line-height:1.7!important;letter-spacing:normal!important;color:#9a811d!important;margin:2px 0 8px!important;text-align:left!important}
+.staff-modal-content .staff-modal-nickname{font-size:11px!important;margin:2px 0 8px!important}
