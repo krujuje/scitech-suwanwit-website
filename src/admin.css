@@ -345,3 +345,22 @@
 .cms-education-pair-secondary{padding-top:4px!important;opacity:.88}
 .cms-education-pair-secondary .cms-education-field>label select{background:#fffdf4!important;border-color:#eadca8!important}
 .cms-education-pair-secondary .cms-qualification>label select{background:#f3f8f0!important;border-color:#c9ddc2!important}
+
+
+/* Dedicated homepage editor — preserves the site's green/yellow identity. */
+.cms-home-fields{display:grid;gap:16px;padding:18px;border:1px solid #dcebd8;border-radius:16px;background:#f8fbf5}
+.cms-home-intro{display:grid;gap:4px;padding:0 0 12px;border-bottom:1px solid #e1ebdc;color:#176334}
+.cms-home-intro b{font-size:17px}
+.cms-home-intro span,.cms-home-slides-head small{font-size:12px;color:#718675}
+.cms-home-grid,.cms-home-slide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cms-home-grid label,.cms-home-slide-grid label{display:grid;gap:6px;min-width:0}
+.cms-home-grid label.wide,.cms-home-slide-grid label.wide{grid-column:1/-1}
+.cms-home-slides-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px}
+.cms-home-slides-head>div{display:grid;gap:3px}
+.cms-home-slides-head b{color:#176334}
+.cms-home-slide{padding:14px;border:1px solid #e7dca9;border-radius:13px;background:#fffdf5}
+.cms-home-slide-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;color:#80680e}
+.cms-home-slide-grid input[type=file]{padding:9px;background:#fff;border:1px dashed #c9dcbf;border-radius:9px}
+.cms-home-slide-preview{display:flex;align-items:center;gap:12px;grid-column:1/-1;color:#087b35;font-size:12px}
+.cms-home-slide-preview img{width:150px;height:86px;object-fit:cover;border-radius:9px;border:1px solid #dcebd8;background:#fff}
+@media(max-width:700px){.cms-home-grid,.cms-home-slide-grid{grid-template-columns:1fr}.cms-home-grid label.wide,.cms-home-slide-grid label.wide{grid-column:auto}.cms-home-slides-head{align-items:flex-start;flex-direction:column}.cms-home-slides-head .cms-add{width:100%}}
