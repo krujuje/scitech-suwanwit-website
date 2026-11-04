@@ -262,3 +262,15 @@
 .cms-staff-fields .cms-help{font-size:11px;color:#788b7b;font-weight:400}
 .cms-staff-preview{display:block;width:130px;height:150px;object-fit:cover;object-position:top center;margin-top:10px;border:1px solid #dce9dd;border-radius:10px}
 @media(max-width:680px){.cms-staff-fields .cms-duty-options{grid-template-columns:1fr}}
+
+
+/* Clear navigation and staff-only streamlined editor */
+.cms-header-actions,.cms-editor-nav{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.cms-add-small{padding:10px 14px!important;font-size:12px!important}
+.cms-add-outline{background:#fff!important;color:#087b35!important;border:1px solid #b9d8bd!important}
+.cms-editor-head{gap:14px;flex-wrap:wrap}
+.cms-editor-nav .cms-plain{display:inline-flex;align-items:center;gap:6px;padding:11px 14px}
+.cms-edit-action{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:8px 11px;border:1px solid #dce9dd;border-radius:9px;background:#fff;color:#176334;cursor:pointer;font:12px 'Noto Serif Thai',serif}
+.cms-staff-image-preview{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.cms-staff-image-preview .cms-staff-preview{margin-top:0}
+@media(max-width:680px){.cms-header-actions{width:100%;justify-content:flex-start}.cms-header-actions .cms-add{flex:1;padding:11px 10px!important;font-size:12px!important}.cms-editor-nav{width:100%;justify-content:flex-start}.cms-edit-action span{display:inline}}
