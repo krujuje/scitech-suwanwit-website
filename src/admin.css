@@ -370,3 +370,18 @@
 
 /* Enforce the agreed font stack on CMS fields and their entered values. */
 .cms-shell input,.cms-shell textarea,.cms-shell select,.cms-shell button,.cms-login input,.cms-login button{font-family:'Varela Round','Noto Serif Thai',sans-serif!important;font-synthesis:none}
+
+/* Dedicated About Us editor — distinct narrative fields, shared typography standard */
+.cms-about-fields{padding:22px;border:1px solid #d9ead4;border-radius:18px;background:linear-gradient(145deg,#f8fcf4,#fff)}
+.cms-about-intro{display:flex;flex-direction:column;gap:5px;padding:0 0 16px;margin-bottom:18px;border-bottom:1px solid #dfebd9}
+.cms-about-intro b{font-size:17px;color:#0b6530}
+.cms-about-intro span,.cms-about-note{font-size:12px;color:#718674;line-height:1.7}
+.cms-about-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.cms-about-grid label{display:flex;flex-direction:column;gap:7px;color:#456b50;font-size:13px;font-weight:700}
+.cms-about-grid label.wide{grid-column:1/-1}
+.cms-about-grid input,.cms-about-grid textarea{width:100%;box-sizing:border-box;border:1px solid #d7e8d2;border-radius:12px;padding:12px 14px;background:#fff;color:#234d30;font:14px 'Varela Round','Noto Serif Thai',serif;line-height:1.75}
+.cms-about-grid input.cms-about-gold{border-color:#ead78a;background:#fff9e5}
+.cms-about-grid textarea{resize:vertical;min-height:84px}
+.cms-about-grid input:focus,.cms-about-grid textarea:focus{outline:2px solid #b7dfb8;border-color:#17833e}
+.cms-about-note{margin-top:16px;padding:12px 14px;border-radius:10px;background:#fff9e5;border:1px solid #f0dfa1}
+@media(max-width:700px){.cms-about-fields{padding:14px}.cms-about-grid{grid-template-columns:1fr}.cms-about-grid label.wide{grid-column:auto}}
