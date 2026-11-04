@@ -288,3 +288,10 @@
 /* Admin list thumbnails: fit complete portrait without cropping */
 .cms-row>img,.cms-thumb{box-sizing:border-box;width:58px;height:76px;flex:0 0 58px;object-fit:contain;object-position:center center;background:#fff;border:1px solid #e5ecdf;border-radius:8px;padding:2px}
 @media(max-width:700px){.cms-row>img,.cms-thumb{width:48px;height:64px;flex-basis:48px}}
+
+
+/* Custom dropdown option management */
+.cms-option-add{display:flex;gap:7px;align-items:center;margin-top:7px}
+.cms-option-add input{min-width:0;flex:1;font-size:12px;padding:7px 9px}
+.cms-option-add button{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;border:1px solid #b9d8bd;border-radius:9px;background:#f3f9ef;color:#087b37;padding:7px 10px;font:inherit;font-size:12px;cursor:pointer}
+.cms-option-add button:hover{background:#e7f3e3}
