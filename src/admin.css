@@ -295,3 +295,16 @@
 .cms-option-add input{min-width:0;flex:1;font-size:12px;padding:7px 9px}
 .cms-option-add button{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;border:1px solid #b9d8bd;border-radius:9px;background:#f3f9ef;color:#087b37;padding:7px 10px;font:inherit;font-size:12px;cursor:pointer}
 .cms-option-add button:hover{background:#e7f3e3}
+
+
+/* Education option editor: same rounded control language as dropdowns,
+   with a soft warm tint to distinguish custom-option entry from selection. */
+.cms-education-field{display:grid;gap:8px;min-width:0}
+.cms-education-field>label{display:grid;gap:6px}
+.cms-education-field>label select{min-height:48px;border:1px solid #dce7d9;border-radius:12px;background:#fff;padding:11px 14px;color:#183d27;font:inherit}
+.cms-education-field .cms-option-add{display:flex;align-items:center;gap:8px;min-width:0;margin:0;padding:7px;background:#fff9e8;border:1px solid #eadca8;border-radius:12px}
+.cms-education-field .cms-option-add input{flex:1;min-width:0;height:42px;padding:9px 12px;border:1px solid #eadca8;border-radius:9px;background:#fff;color:#183d27;font:inherit}
+.cms-education-field .cms-option-add input:focus{outline:2px solid #d8c36c;outline-offset:1px}
+.cms-education-field .cms-option-add button{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap;padding:8px 13px;border:1px solid #d9c56f;border-radius:9px;background:#fff1bd;color:#765c08;font:inherit;font-weight:700;cursor:pointer}
+.cms-education-field .cms-option-add button:hover{background:#fbe8a0}
+@media(max-width:480px){.cms-education-field .cms-option-add{flex-wrap:wrap}.cms-education-field .cms-option-add input{flex-basis:100%}.cms-education-field .cms-option-add button{width:100%}}
