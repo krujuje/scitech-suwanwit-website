@@ -337,3 +337,11 @@
 .cms-education-pair-secondary{grid-row:auto}
 .cms-education-pair .cms-education-field>label select{width:100%;box-sizing:border-box}
 @media(max-width:700px){.cms-education-pair{grid-template-columns:1fr}}
+
+
+/* Education groups: remove decorative blue frames; second row is optional. */
+.cms-education-pair{border:0!important;border-radius:0!important;padding:0!important;margin:14px 0!important;background:transparent!important;box-shadow:none!important}
+.cms-education-pair-primary,.cms-education-pair-secondary{background:transparent!important}
+.cms-education-pair-secondary{padding-top:4px!important;opacity:.88}
+.cms-education-pair-secondary .cms-education-field>label select{background:#fffdf4!important;border-color:#eadca8!important}
+.cms-education-pair-secondary .cms-qualification>label select{background:#f3f8f0!important;border-color:#c9ddc2!important}
