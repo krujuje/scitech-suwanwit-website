@@ -133,3 +133,34 @@
   .cms-header h1 { font-size: 19px; }
   .cms-login form { padding: 25px 21px; }
 }
+
+
+/* Correct English brand/headings font: Varela Round (override global Thai font). */
+.cms-logo,
+.cms-logo small,
+.cms-mark,
+.cms-kicker,
+.cms-header > div > small,
+.cms-editor-head > div > small {
+  font-family: 'Varela Round', sans-serif !important;
+  font-weight: 400;
+}
+.cms-logo {
+  font-size: 26px;
+  letter-spacing: -.02em;
+}
+.cms-logo small {
+  font-size: 10px;
+  letter-spacing: .2em;
+}
+.cms-mark {
+  font-size: 32px;
+  font-weight: 400;
+}
+.cms-kicker,
+.cms-header > div > small,
+.cms-editor-head > div > small {
+  letter-spacing: .16em;
+  font-size: 10px;
+  line-height: 1.7;
+}
