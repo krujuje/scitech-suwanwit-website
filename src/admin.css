@@ -367,3 +367,6 @@
 
 /* Typography standard: Varela Round for Latin characters, Noto Serif Thai for Thai glyphs. */
 .cms-shell,.cms-shell *,.cms-shell *::before,.cms-shell *::after,.cms-login,.cms-login *,.cms-login *::before,.cms-login *::after{font-family:'Varela Round','Noto Serif Thai',serif!important}
+
+/* Enforce the agreed font stack on CMS fields and their entered values. */
+.cms-shell input,.cms-shell textarea,.cms-shell select,.cms-shell button,.cms-login input,.cms-login button{font-family:'Varela Round','Noto Serif Thai',sans-serif!important;font-synthesis:none}
