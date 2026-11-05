@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from './lib/supabase.js';
-import { Atom, FlaskConical, Microscope, Telescope, Cpu, BookOpen, Menu, X, Globe2, ChevronRight, ArrowUpRight, Users, FileText, Trophy, CalendarDays, ExternalLink, ChevronLeft, ChevronRight as NextIcon, Pause, Play, Home, Info, UsersRound, Layers3, Newspaper, LibraryBig, ClipboardList, Award, MonitorSmartphone } from 'lucide-react';
+import { Atom, FlaskConical, Microscope, Telescope, Cpu, BookOpen, Menu, X, Globe2, ChevronRight, ArrowUpRight, Users, FileText, Trophy, CalendarDays, ExternalLink, ChevronLeft, ChevronRight as NextIcon, Pause, Play, Home, Info, UsersRound, Layers3, Newspaper, LibraryBig, ClipboardList, Award, MonitorSmartphone, Leaf, Calculator } from 'lucide-react';
 
 const FB='https://www.facebook.com/share/19aprnCA35/';
 const LINE='https://line.me/ti/g2/ji3Z0g0k3CeL0nVrw28d7bbG8noT6w43Eia-xw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default';
